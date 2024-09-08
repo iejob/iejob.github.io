@@ -1,0 +1,397 @@
+<!DOCTYPE html> <html><head>
+		<title>README</title>
+		<base href="..\..\..\..\../">
+		<meta id="root-path" root-path="..\..\..\..\../">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="note - README">
+		<meta property="og:title" content="README">
+		<meta property="og:description" content="note - README">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="root/dev/data-pipe-line/kafka/group/readme.html">
+		<meta property="og:image" content="undefined">
+		<meta property="og:site_name" content="note">
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/other-plugins.css"></noscript><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/supported-plugins.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><link rel="preload" href="lib/styles/snippets.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/snippets.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title show-ribbon zoom-plugin-bls-zoom horizontal-to-vertical"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="Apache Kafka : Data Message Queue"><p dir="auto">Apache Kafka : Data Message Queue</p></h1><div class="heading-wrapper"><div class="heading-children"><div class="heading-wrapper"><h2 data-heading="0. Prerequisite" dir="auto" class="heading" id="0._Prerequisite"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>0. Prerequisite</h2><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">CentOS 9 </li>
+<li data-line="1" dir="auto">실습에 필요한 라이브러리 설치</li>
+</ul></div><div class="heading-wrapper"><h3 data-heading="Java 설치 및 JAVA_HOME 설정" dir="auto" class="heading" id="Java_설치_및_JAVA_HOME_설정"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Java 설치 및 JAVA_HOME 설정</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">참고 링크 : <a rel="noopener" class="external-link" href="https://www.linkedin.com/pulse/how-install-kafka-centos-aimasterlive-xp0xc/" target="_blank">https://www.linkedin.com/pulse/how-install-kafka-centos-aimasterlive-xp0xc/</a></li>
+</ul></div><div><pre><code>&gt; sudo dnf install java-17-openjdk java-17-openjdk-devel
+
+&gt; java --version
+openjdk version "17.0.6" 2023-01-17 LTS
+OpenJDK Runtime Environment (Red_Hat-17.0.6.0.10-3.el9) (build 17.0.6+10-LTS)
+OpenJDK 64-Bit Server VM (Red_Hat-17.0.6.0.10-3.el9) (build 17.0.6+10-LTS, mixed mode, sharing)
+
+# java home 경로 확인
+&gt; ls /usr/lib/jvm/jre-17-openjdk
+bin  conf  include  legal  lib  release  tapset
+
+# JAVA_HOME 설정
+&gt; echo 'export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which javac))))' | sudo tee -a /etc/profile
+
+&gt; source /etc/profile
+
+&gt; echo $JAVA_HOME
+/usr/lib/jvm/java-17-openjdk-17.0.6.0.10-3.el9.x86_64
+
+&gt; ls $JAVA_HOME
+bin  conf  include  legal  lib  release  tapset
+
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="1. Install &amp; start kafka [link](http://kafka.apache.org/documentation.html#quickstart)" dir="auto" class="heading" id="1._Install_&amp;_start_kafka_[link](http://kafka.apache.org/documentation.html#quickstart)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1. Install &amp; start kafka <a data-tooltip-position="top" aria-label="http://kafka.apache.org/documentation.html#quickstart" rel="noopener" class="external-link" href="http://kafka.apache.org/documentation.html#quickstart" target="_blank">link</a></h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="Step 1: Download the apache kafka binary files" dir="auto" class="heading" id="Step_1:_Download_the_apache_kafka_binary_files"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Step 1: Download the apache kafka binary files</h3><div class="heading-children"><div><pre><code>&gt; sudo dnf install -y  wget
+&gt; mkdir ~/apps
+&gt; cd ~/apps/
+&gt; wget https://downloads.apache.org/kafka/3.6.2/kafka_2.12-3.6.2.tgz
+&gt; tar -xzvf kafka_2.12-3.6.2.tgz
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Step 2: Start Zookeeper server" dir="auto" class="heading" id="Step_2:_Start_Zookeeper_server"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Step 2: Start Zookeeper server</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+
+# 1) Foreground 실행 (테스트 용으로 zookeeper 로그를 직접 확인)
+&gt; bin/zookeeper-server-start.sh config/zookeeper.properties
+
+# 2) Background 실행
+&gt; bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
+&gt; ps -ef | grep zookeeper
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Step 3: Start Kafka server" dir="auto" class="heading" id="Step_3:_Start_Kafka_server"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Step 3: Start Kafka server</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+
+# 1) Foregroud 
+&gt; bin/kafka-server-start.sh config/server.properties
+
+# 2) background 실행
+&gt; bin/kafka-server-start.sh -daemon config/server.properties
+
+</code><button class="copy-code-button">복사</button></pre></div><div class="heading-wrapper"><h4 data-heading="Kafka Broker 설치후 생성되는 로그파일" dir="auto" class="heading" id="Kafka_Broker_설치후_생성되는_로그파일"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Kafka Broker 설치후 생성되는 로그파일</h4><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>config/server.properties의 log.dir에 정의된 파일
+<ul>
+<li data-line="1" dir="auto"><a rel="noopener" class="external-link" href="https://github.com/apache/kafka/blob/3.0/config/server.properties" target="_blank">https://github.com/apache/kafka/blob/3.0/config/server.properties</a></li>
+</ul>
+</li>
+</ul></div><div><pre class="language-properties" tabindex="0"><code class="language-properties is-loaded"><span class="token comment"># A comma separated list of directories under which to store log files</span>
+<span class="token key attr-name">log.dirs</span><span class="token punctuation">=</span><span class="token value attr-value">/tmp/kafka-logs</span>
+</code><button class="copy-code-button">복사</button></pre></div><div><ul>
+<li data-line="0" dir="auto">아직 topic이 생성되지 않아서, 메타정보 관련된 파일만 생성됨. </li>
+</ul></div><div><pre><code>&gt; ls /tmp/kafka-logs/
+cleaner-offset-checkpoint    meta.properties                   replication-offset-checkpoint
+log-start-offset-checkpoint  recovery-point-offset-checkpoint
+</code><button class="copy-code-button">복사</button></pre></div><div><ul>
+<li data-line="0" dir="auto">메타 정보 출력</li>
+</ul></div><div><pre><code>## Broker 관련 메타 정보를 출력 
+&gt; cat /tmp/kafka-logs/meta.properties
+#
+#Sun Mar 27 00:10:12 UTC 2022
+cluster.id=OX9OhkJmRZWJ9xFCE8CIgw
+version=0
+broker.id=0
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="Step 4: Create a topic" dir="auto" class="heading" id="Step_4:_Create_a_topic"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Step 4: Create a topic</h3><div class="heading-children"><div class="heading-wrapper"><h4 data-heading="topic 생성 후 조회" dir="auto" class="heading" id="topic_생성_후_조회"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>topic 생성 후 조회</h4><div class="heading-children"><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+&gt; bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
+
+&gt; bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="Topic 생성 후 log 디렉토리에 추가되는 파일들" dir="auto" class="heading" id="Topic_생성_후_log_디렉토리에_추가되는_파일들"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Topic 생성 후 log 디렉토리에 추가되는 파일들</h4><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">__consumer_offsets 파티션정보 (첫번째 topic 생성시 자동으로 생성됨)</li>
+</ul></div><div><pre><code>&gt; ls /tmp/kafka-logs/
+cleaner-offset-checkpoint    meta.properties                   replication-offset-checkpoint
+log-start-offset-checkpoint  recovery-point-offset-checkpoint  test-0
+.....
+</code><button class="copy-code-button">복사</button></pre></div><div><ul>
+<li data-line="0" dir="auto">.log 파일에 데이터가 없음. (전송된 메지가 없음)</li>
+</ul></div><div><pre><code>&gt; ls -al /tmp/kafka-logs/test-0total 16
+drwxr-xr-x.  2 freepsw18 freepsw18      167 Jul  1 16:59 .
+drwxr-xr-x. 53 freepsw18 freepsw18     4096 Jul  1 17:01 ..
+-rw-r--r--.  1 freepsw18 freepsw18 10485760 Jul  1 16:59 00000000000000000000.index
+-rw-r--r--.  1 freepsw18 freepsw18      160 Jul  1 17:00 00000000000000000000.log
+-rw-r--r--.  1 freepsw18 freepsw18 10485756 Jul  1 16:59 00000000000000000000.timeindex
+-rw-r--r--.  1 freepsw18 freepsw18        8 Jul  1 16:59 leader-epoch-checkpoint
+-rw-r--r--.  1 freepsw18 freepsw18       43 Jul  1 16:59 partition.metadata
+
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="Step 5: Send some messages" dir="auto" class="heading" id="Step_5:_Send_some_messages"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Step 5: Send some messages</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+&gt; bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+my message
+second message
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Step 6: Start a consumer" dir="auto" class="heading" id="Step_6:_Start_a_consumer"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Step 6: Start a consumer</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+&gt; bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+my message
+second message
+
+</code><button class="copy-code-button">복사</button></pre></div><div class="heading-wrapper"><h4 data-heading="메시지 전송 후 log 디렉토리에 추가되는 파일들" dir="auto" class="heading" id="메시지_전송_후_log_디렉토리에_추가되는_파일들"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>메시지 전송 후 log 디렉토리에 추가되는 파일들</h4><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">__consumer_offsets 파티션 생성 (첫번째 topic 생성시 자동으로 생성됨)</li>
+</ul></div><div><pre><code>&gt; ls /tmp/kafka-logs/
+__consumer_offsets-0   __consumer_offsets-22  __consumer_offsets-36  __consumer_offsets-5
+.....
+</code><button class="copy-code-button">복사</button></pre></div><div><ul>
+<li data-line="0" dir="auto">.log 파일에 실제 데이터가 저장됨 (기본 7일간 데이터 보관, 이후에 자동 삭제)</li>
+</ul></div><div><pre><code>&gt; ls -al /tmp/kafka-logs/test-0
+drwxr-xr-x.  2 freepsw18 freepsw18      167 Jul  1 16:59 .
+drwxr-xr-x. 53 freepsw18 freepsw18     4096 Jul  1 17:02 ..
+-rw-r--r--.  1 freepsw18 freepsw18 10485760 Jul  1 16:59 00000000000000000000.index
+-rw-r--r--.  1 freepsw18 freepsw18      160 Jul  1 17:00 00000000000000000000.log
+-rw-r--r--.  1 freepsw18 freepsw18 10485756 Jul  1 16:59 00000000000000000000.timeindex
+-rw-r--r--.  1 freepsw18 freepsw18        8 Jul  1 16:59 leader-epoch-checkpoint
+-rw-r--r--.  1 freepsw18 freepsw18       43 Jul  1 16:59 partition.metadata
+
+
+</code><button class="copy-code-button">복사</button></pre></div><div><ul>
+<li data-line="0" dir="auto">log 파일의 내용 확인 </li>
+</ul></div><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+
+## log 파일 확인 
+&gt; bin/kafka-run-class.sh kafka.tools.DumpLogSegments --deep-iteration --print-data-log --files /tmp/kafka-logs/test-0/00000000000000000000.log
+Dumping /tmp/kafka-logs/test-0/00000000000000000000.log
+Log starting offset: 0
+baseOffset: 0 lastOffset: 0 count: 1 baseSequence: 0 lastSequence: 0 producerId: 0 producerEpoch: 0 partitionLeaderEpoch: 0 isTransactional: false isControl: false deleteHorizonMs: OptionalLong.empty position: 0 CreateTime: 1719853215613 size: 78 magic: 2 compresscodec: none crc: 3210426395 isvalid: true
+| offset: 0 CreateTime: 1719853215613 keySize: -1 valueSize: 10 sequence: 0 headerKeys: [] payload: my message
+baseOffset: 1 lastOffset: 1 count: 1 baseSequence: 1 lastSequence: 1 producerId: 0 producerEpoch: 0 partitionLeaderEpoch: 0 isTransactional: false isControl: false deleteHorizonMs: OptionalLong.empty position: 78 CreateTime: 1719853219329 size: 82 magic: 2 compresscodec: none crc: 2827246318 isvalid: true
+| offset: 1 CreateTime: 1719853219329 keySize: -1 valueSize: 14 sequence: 1 headerKeys: [] payload: second message
+
+
+## index 파일 확인
+&gt; bin/kafka-run-class.sh kafka.tools.DumpLogSegments --deep-iteration --print-data-log --files /tmp/kafka-logs/test-0/00000000000000000000.index
+Dumping /tmp/kafka-logs/test-0/00000000000000000000.index
+offset: 0 position: 0
+
+## timestamp index 파일 확인 
+&gt; bin/kafka-run-class.sh kafka.tools.DumpLogSegments --deep-iteration --print-data-log --files /tmp/kafka-logs/test-0/00000000000000000000.timeindex
+Dumping /tmp/kafka-logs/test-0/00000000000000000000.timeindex
+timestamp: 1719853219329 offset: 1
+
+
+</code><button class="copy-code-button">복사</button></pre></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Topic의 partition 별로 마지막 commit 된 위치 확인 
+<ul>
+<li data-line="1" dir="auto">40번 partition에 commit 2로 저장됨</li>
+</ul>
+</li>
+</ul></div><div><pre><code>&gt; cat /tmp/kafka-logs/replication-offset-checkpoint
+0
+51
+test 0 2
+__consumer_offsets 29 0
+__consumer_offsets 43 0
+__consumer_offsets 0 0
+__consumer_offsets 40 2
+
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="Step 7: Describe Topic" dir="auto" class="heading" id="Step_7:_Describe_Topic"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Step 7: Describe Topic</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+&gt; bin/kafka-topics.sh --describe  --bootstrap-server localhost:9092 --topic test
+Topic: test	TopicId: w1XGVh69Q32nB6-TK4yV9A	PartitionCount: 1	ReplicationFactor: 1	Configs:
+	Topic: test	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Steo 8: Offset monitoring" dir="auto" class="heading" id="Steo_8:_Offset_monitoring"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Steo 8: Offset monitoring</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto"><a rel="noopener" class="external-link" href="https://kafka.apache.org/documentation/#basic_ops_consumer_lag" target="_blank">https://kafka.apache.org/documentation/#basic_ops_consumer_lag</a></li>
+</ul></div><div><pre><code># find consumer group list
+&gt; bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+console-consumer-29099
+
+# view offset of group
+&gt; bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group console-consumer-29099
+
+TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                     HOST            CLIENT-ID
+test            0          2               2               0               consumer-1-ff412a90-fec0-45e4-89d9-06179c7bd8e3 /10.146.0.6     consumer-1
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Delete Topic" dir="auto" class="heading" id="Delete_Topic"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Delete Topic</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">실습에서는 삭제하지 말고, 명령어 참고만 할 것</li>
+</ul></div><div><pre><code>&gt; bin/kafka-topics.sh --delete --bootstrap-server localhost:9092  --topic test
+
+# 삭제 후 topic이 삭제되었는지 확인
+&gt; bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="3. Check Zookeeper data" dir="auto" class="heading" id="3._Check_Zookeeper_data"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>3. Check Zookeeper data</h2><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">접속할 zookeeper 정보를 입력하여, zookeeper 내부로 접속</li>
+</ul></div><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+
+&gt; bin/zookeeper-shell.sh localhost:2181
+Connecting to localhost:2181
+Connecting to localhost:2181
+Welcome to ZooKeeper!
+JLine support is disabled
+
+WATCHER::
+
+WatchedEvent state:SyncConnected type:None path:null
+
+## Zookeeper에서 제공하는 정보 조회
+ls /
+[admin, brokers, cluster, config, consumers, controller, controller_epoch, feature, isr_change_notification, latest_producer_id_block, log_dir_event_notification, zookeeper]
+
+
+## Broker 관련 정보 조회 
+ls /brokers
+[ids, seqid, topics]
+
+
+## 현재 broker 목록을 조회 (broker 0번만 존재)
+ls /brokers/ids
+[0]
+
+## 0번 broker에 대한 정보 확인 
+get /brokers/ids/0
+{"listener_security_protocol_map":{"PLAINTEXT":"PLAINTEXT"},"endpoints":["PLAINTEXT://instance-20240701-162846.asia-northeast3-b.c.beaming-grid-428115-d6.internal:9092"],"jmx_port":-1,"features":{},"host":"instance-20240701-162846.asia-northeast3-b.c.beaming-grid-428115-d6.internal","timestamp":"1719917952131","port":9092,"version":5}
+
+
+## topic 정보 조회 
+ls /brokers/topics
+[__consumer_offsets]
+
+
+## topic 상세 정보 조회
+get /brokers/topics/test
+Node does not exist: /brokers/topics/test
+
+# test topic을 삭제하지 않은 경우에는 아래와 같은 topic 정보가 출력됨
+{"removing_replicas":{},"partitions":{"0":[0]},"topic_id":"ZOLr9CLNQjSW70hyIHx6BQ","adding_replicas":{},"version":3}
+
+
+## controller broker 조회
+get /controller
+{"version":2,"brokerid":0,"timestamp":"1719917952299","kraftControllerEpoch":-1}
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h1 data-heading="아래 내용이 필요한지 확인 후 삭제 필요!!!!!!!!!!!!!!!!" dir="auto" class="heading" id="아래_내용이_필요한지_확인_후_삭제_필요!!!!!!!!!!!!!!!!">아래 내용이 필요한지 확인 후 삭제 필요!!!!!!!!!!!!!!!!</h1><div class="heading-children"><div class="heading-wrapper"><h2 data-heading="4. Collect data using apache flume , apache kafka, logstash" dir="auto" class="heading" id="4._Collect_data_using_apache_flume_,_apache_kafka,_logstash"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>4. Collect data using apache flume , apache kafka, logstash</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="01. Create Kafka topic" dir="auto" class="heading" id="01._Create_Kafka_topic"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>01. Create Kafka topic</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+&gt; bin/kafka-topics.sh --create  --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic mytopic
+
+&gt; bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="02. Collect logs and send logs to kafka using apache flume" dir="auto" class="heading" id="02._Collect_logs_and_send_logs_to_kafka_using_apache_flume"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>02. Collect logs and send logs to kafka using apache flume</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">아래 링크를 이용하여 Apache flume을 설치 및 실행 테스트</li>
+<li data-line="1" dir="auto"><a rel="noopener" class="external-link" href="https://github.com/freepsw/RTS_Practice/blob/master/01.Apache%20Flume.md#1-collectionapache-flume" target="_blank">https://github.com/freepsw/RTS_Practice/blob/master/01.Apache%20Flume.md#1-collectionapache-flume</a></li>
+</ul></div><div class="heading-wrapper"><h4 data-heading="Create Flume config" dir="auto" class="heading" id="Create_Flume_config"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Create Flume config</h4><div class="heading-children"><div><pre><code>&gt; cd ~/apps/apache-flume-1.8.0-bin/conf
+&gt; vi nc-kafka.conf
+
+a1.sources = r1
+a1.channels = c1
+a1.sinks = s1
+
+a1.sources.r1.type = netcat
+a1.sources.r1.bind = localhost
+a1.sources.r1.port = 56565
+a1.sources.r1.channels = c1
+
+a1.channels.c1.type = memory
+a1.channels.c1.capacity = 1000
+a1.channels.c1.transactionCapacity = 100
+
+a1.sinks.s1.type = org.apache.flume.sink.kafka.KafkaSink
+a1.sinks.s1.topic = mytopic
+a1.sinks.s1.brokerList = localhost:9092
+a1.sinks.s1.requiredAcks = 1
+a1.sinks.s1.batchSize = 20
+a1.sinks.s1.channel = c1
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="run flume agent" dir="auto" class="heading" id="run_flume_agent"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>run flume agent</h4><div class="heading-children"><div><pre><code>&gt; cd ~/apps/apache-flume-1.8.0-bin/
+&gt; ./bin/flume-ng agent -c ./conf -f ./conf/nc-kafka.conf -name a1 -Dflume.root.logger=INFO,console
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="03. Consume Kafka message using logstash" dir="auto" class="heading" id="03._Consume_Kafka_message_using_logstash"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>03. Consume Kafka message using logstash</h3><div class="heading-children"><div class="heading-wrapper"><h4 data-heading="Create logstash config" dir="auto" class="heading" id="Create_logstash_config"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Create logstash config</h4><div class="heading-children"><div><pre><code>&gt; cd ~/apps/logstash-6.4.2
+&gt; vi kafka-input.conf
+
+input {
+  kafka{
+  	topics =&gt; ["토픽명"]
+  	bootstrap_servers =&gt; "kafka브로커ip:9092"
+  }
+}
+
+output {
+  stdout { codec =&gt; rubydebug }
+}
+</code><button class="copy-code-button">복사</button></pre></div><div><ul>
+<li data-line="0" dir="auto">logstash 실행</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="04. Send Logs to apache flume using necat command" dir="auto" class="heading" id="04._Send_Logs_to_apache_flume_using_necat_command"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>04. Send Logs to apache flume using necat command</h3><div class="heading-children"><div><pre><code>&gt; curl telnet://localhost:56565
+hi message
+OK
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="05. Check logstash console" dir="auto" class="heading" id="05._Check_logstash_console"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>05. Check logstash console</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">아래와 같이 necat으로 보낸 메세지를 받는지 확인한다.</li>
+</ul></div><div><pre class="language-json" tabindex="0"><code class="language-json is-loaded"><span class="token punctuation">{</span>
+       <span class="token string">"message"</span> =&gt; <span class="token string">"hi message"</span><span class="token punctuation">,</span>
+      <span class="token string">"@version"</span> =&gt; <span class="token string">"1"</span><span class="token punctuation">,</span>
+    <span class="token string">"@timestamp"</span> =&gt; <span class="token number">2018</span><span class="token number">-10</span>-12T14<span class="token operator">:</span><span class="token number">18</span><span class="token operator">:</span><span class="token number">36</span>.953Z
+<span class="token punctuation">}</span>
+</code><button class="copy-code-button">복사</button></pre></div><div class="heading-wrapper"><h4 data-heading="06. KafkaOffsetMonitoring" dir="auto" class="heading" id="06._KafkaOffsetMonitoring"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>06. KafkaOffsetMonitoring</h4><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">Kafka의 주요 topic, consumer group, offset 값을 모니터링 한다.</li>
+<li data-line="1" dir="auto"><a rel="noopener" class="external-link" href="https://github.com/Morningstar/kafka-offset-monitor" target="_blank">https://github.com/Morningstar/kafka-offset-monitor</a> 참고</li>
+</ul></div><div><pre><code>&gt; cd ~/apps/apache-flume-1.8.0-bin/
+&gt; wget https://github.com/Morningstar/kafka-offset-monitor/releases/download/0.4.6/KafkaOffsetMonitor-assembly-0.4.6-SNAPSHOT.jar
+&gt; java -cp KafkaOffsetMonitor-assembly-0.4.6-SNAPSHOT.jar \
+      com.quantifind.kafka.offsetapp.OffsetGetterWeb \
+    --offsetStorage kafka \
+    --kafkaBrokers localhost:9092 \
+    --zk localhost:2181 \
+    --port 8081 \
+    --refresh 10.seconds \
+    --retain 2.days
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="10. Use Kafka Connect to import/export data" dir="auto" class="heading" id="10._Use_Kafka_Connect_to_import/export_data"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>10. Use Kafka Connect to import/export data</h2><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">별도의 수집용 code를 만들지 않고, kafka connect를 이용하여 데이터 import 및 export 할 수 있다.</li>
+<li data-line="1" dir="auto">Secenario : file을 import하고, file로 export 한다.</li>
+</ul></div><div><pre><code>#  creating some seed data to test with
+&gt; echo -e "foo\nbar" &gt; test.txt
+
+# start two connectors running in standalone mode
+# 3개의 config 파일을 파라미터로 넘긴다.
+# 1. Kafka connect process용 config (broker info, data format ...)
+# 2. source에 대한 config (test.txt 지정)
+# 3. sink에 대한 config (test.sink.txt 지정)
+&gt; bin/connect-standalone.sh config/connect-standalone.properties config/connect-file-source.properties config/connect-file-sink.properties
+
+# check test.sink.txt file
+&gt; cat test.sink.txt
+foo
+bar
+
+# send another message
+&gt; echo "Another line" &gt;&gt; test.txt
+
+# check test.sink.txt file again
+
+
+# check kafka topic message
+&gt; bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic connect-test --from-beginning
+
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h2 data-heading="20. Use Kafka Streams to process data" dir="auto" class="heading" id="20._Use_Kafka_Streams_to_process_data"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>20. Use Kafka Streams to process data</h2><div class="heading-children"><div><pre><code># create message and publish to topic "streams-file-input"
+&gt; cd $KAFKA_HOME
+&gt; echo -e "all streams lead to kafka\nhello kafka streams\njoin kafka summit" &gt; file-input.txt
+&gt; cat file-input.txt | ./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic streams-file-input
+
+# run kafka stream
+&gt; ./bin/kafka-run-class.sh org.apache.kafka.streams.examples.wordcount.WordCountDemo
+
+# check result of kafka stream
+&gt; ./bin/kafka-console-consumer.sh --zookeeper localhost:2181 \
+            --topic streams-wordcount-output \
+            --from-beginning \
+            --formatter kafka.tools.DefaultMessageFormatter \
+            --property print.key=true \
+            --property print.key=true \
+            --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer \
+            --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
+
+all     1
+streams 1
+lead    1
+to      1
+kafka   1
+hello   1
+kafka   2
+streams 2
+join    1
+kafka   3
+summit  1
+
+</code><button class="copy-code-button">복사</button></pre></div><div class="mod-footer"></div></div></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Apache Kafka : Data Message Queue"><div class="tree-item-contents heading-link" heading-name="Apache Kafka : Data Message Queue"><span class="tree-item-title">Apache Kafka : Data Message Queue</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#0._Prerequisite"><div class="tree-item-contents heading-link" heading-name="0. Prerequisite"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">0. 
+Prerequisite
+</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Java_설치_및_JAVA_HOME_설정"><div class="tree-item-contents heading-link" heading-name="Java 설치 및 JAVA_HOME 설정"><span class="tree-item-title">Java 설치 및 JAVA_HOME 설정</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#1._Install_&amp;_start_kafka_[link](http://kafka.apache.org/documentation.html#quickstart)"><div class="tree-item-contents heading-link" heading-name="1. Install &amp; start kafka [link](http://kafka.apache.org/documentation.html#quickstart)"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">1. 
+Install &amp; start kafka link
+</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Step_1:_Download_the_apache_kafka_binary_files"><div class="tree-item-contents heading-link" heading-name="Step 1: Download the apache kafka binary files"><span class="tree-item-title">Step 1: Download the apache kafka binary files</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Step_2:_Start_Zookeeper_server"><div class="tree-item-contents heading-link" heading-name="Step 2: Start Zookeeper server"><span class="tree-item-title">Step 2: Start Zookeeper server</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Step_3:_Start_Kafka_server"><div class="tree-item-contents heading-link" heading-name="Step 3: Start Kafka server"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Step 3: Start Kafka server</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Kafka_Broker_설치후_생성되는_로그파일"><div class="tree-item-contents heading-link" heading-name="Kafka Broker 설치후 생성되는 로그파일"><span class="tree-item-title">Kafka Broker 설치후 생성되는 로그파일</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Step_4:_Create_a_topic"><div class="tree-item-contents heading-link" heading-name="Step 4: Create a topic"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Step 4: Create a topic</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#topic_생성_후_조회"><div class="tree-item-contents heading-link" heading-name="topic 생성 후 조회"><span class="tree-item-title">topic 생성 후 조회</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Topic_생성_후_log_디렉토리에_추가되는_파일들"><div class="tree-item-contents heading-link" heading-name="Topic 생성 후 log 디렉토리에 추가되는 파일들"><span class="tree-item-title">Topic 생성 후 log 디렉토리에 추가되는 파일들</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Step_5:_Send_some_messages"><div class="tree-item-contents heading-link" heading-name="Step 5: Send some messages"><span class="tree-item-title">Step 5: Send some messages</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Step_6:_Start_a_consumer"><div class="tree-item-contents heading-link" heading-name="Step 6: Start a consumer"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">Step 6: Start a consumer</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#메시지_전송_후_log_디렉토리에_추가되는_파일들"><div class="tree-item-contents heading-link" heading-name="메시지 전송 후 log 디렉토리에 추가되는 파일들"><span class="tree-item-title">메시지 전송 후 log 디렉토리에 추가되는 파일들</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Step_7:_Describe_Topic"><div class="tree-item-contents heading-link" heading-name="Step 7: Describe Topic"><span class="tree-item-title">Step 7: Describe Topic</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Steo_8:_Offset_monitoring"><div class="tree-item-contents heading-link" heading-name="Steo 8: Offset monitoring"><span class="tree-item-title">Steo 8: Offset monitoring</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Delete_Topic"><div class="tree-item-contents heading-link" heading-name="Delete Topic"><span class="tree-item-title">Delete Topic</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#3._Check_Zookeeper_data"><div class="tree-item-contents heading-link" heading-name="3. Check Zookeeper data"><span class="tree-item-title">3. 
+Check Zookeeper data
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#아래_내용이_필요한지_확인_후_삭제_필요!!!!!!!!!!!!!!!!"><div class="tree-item-contents heading-link" heading-name="아래 내용이 필요한지 확인 후 삭제 필요!!!!!!!!!!!!!!!!"><span class="tree-item-title">아래 내용이 필요한지 확인 후 삭제 필요!!!!!!!!!!!!!!!!</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#4._Collect_data_using_apache_flume_,_apache_kafka,_logstash"><div class="tree-item-contents heading-link" heading-name="4. Collect data using apache flume , apache kafka, logstash"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">4. 
+Collect data using apache flume , apache kafka, logstash
+</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#01._Create_Kafka_topic"><div class="tree-item-contents heading-link" heading-name="01. Create Kafka topic"><span class="tree-item-title">1. 
+Create Kafka topic
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#02._Collect_logs_and_send_logs_to_kafka_using_apache_flume"><div class="tree-item-contents heading-link" heading-name="02. Collect logs and send logs to kafka using apache flume"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">2. 
+Collect logs and send logs to kafka using apache flume
+</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Create_Flume_config"><div class="tree-item-contents heading-link" heading-name="Create Flume config"><span class="tree-item-title">Create Flume config</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#run_flume_agent"><div class="tree-item-contents heading-link" heading-name="run flume agent"><span class="tree-item-title">run flume agent</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#03._Consume_Kafka_message_using_logstash"><div class="tree-item-contents heading-link" heading-name="03. Consume Kafka message using logstash"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">3. 
+Consume Kafka message using logstash
+</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#Create_logstash_config"><div class="tree-item-contents heading-link" heading-name="Create logstash config"><span class="tree-item-title">Create logstash config</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#04._Send_Logs_to_apache_flume_using_necat_command"><div class="tree-item-contents heading-link" heading-name="04. Send Logs to apache flume using necat command"><span class="tree-item-title">4. 
+Send Logs to apache flume using necat command
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#05._Check_logstash_console"><div class="tree-item-contents heading-link" heading-name="05. Check logstash console"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">5. 
+Check logstash console
+</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#06._KafkaOffsetMonitoring"><div class="tree-item-contents heading-link" heading-name="06. KafkaOffsetMonitoring"><span class="tree-item-title">6. 
+KafkaOffsetMonitoring
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#10._Use_Kafka_Connect_to_import/export_data"><div class="tree-item-contents heading-link" heading-name="10. Use Kafka Connect to import/export data"><span class="tree-item-title">10. 
+Use Kafka Connect to import/export data
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\readme.html#20._Use_Kafka_Streams_to_process_data"><div class="tree-item-contents heading-link" heading-name="20. Use Kafka Streams to process data"><span class="tree-item-title">20. 
+Use Kafka Streams to process data
+</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>

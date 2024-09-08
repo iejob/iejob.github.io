@@ -1,15 +1,102 @@
 {
   "vaultName": "note",
-  "lastExport": 1725719041971,
+  "lastExport": 1725773201124,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon zoom-plugin-bls-zoom horizontal-to-vertical",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
+    "root/dev/data pipe line/데이터 파이프라인 구축/간단 파이프 라인에 카프카 붙이기.md",
+    "root/dev/data pipe line/데이터 파이프라인 구축/flask kafka 연동.md",
+    "root/dev/data pipe line/데이터 파이프라인 구축/python 간단 파이프라인.md",
+    "root/dev/data pipe line/데이터 파이프라인 구축/python으로 mysql 파이프 라인 만들기.md",
+    "root/dev/data pipe line/자동화/shell ssh 여러 개 접속 테스트.md",
+    "root/dev/data pipe line/자동화/shellscript 자기 자신이 실행되는 경로 알아내기.md",
+    "root/dev/data pipe line/airflow/Airflow note.md",
+    "root/dev/data pipe line/Elasticsearch/Elasticsearch Cerebro.md",
+    "root/dev/data pipe line/Elasticsearch/Elasticsearch Install.md",
+    "root/dev/data pipe line/hadoop/hadoop 수업/실습/Hadoop HDFS JAVA API.md",
+    "root/dev/data pipe line/hadoop/hadoop 수업/실습/Hadoop Mapreduce.md",
+    "root/dev/data pipe line/hadoop/hadoop 수업/실습/vscode maven 프로젝트 생성.md",
+    "root/dev/data pipe line/hadoop/hadoop 수업/환경 구축/docker hadoop 개발 환경 구축.md",
+    "root/dev/data pipe line/hadoop/hadoop 수업/환경 구축/vscode wsl maven 프로젝트 환경 구축.md",
+    "root/dev/data pipe line/hadoop/hadoop wsl port 정상 작동 로그.md",
+    "root/dev/data pipe line/hadoop/hadoop-study docker image.md",
+    "root/dev/data pipe line/hadoop/Hive 트러블 슈팅.md",
+    "root/dev/data pipe line/kafka/group/01.kafka_basic/delete_offset.json",
+    "root/dev/data pipe line/kafka/group/01.kafka_basic/Log_compaction.md",
+    "root/dev/data pipe line/kafka/group/01.kafka_basic/README.md",
+    "root/dev/data pipe line/kafka/group/02.kafka_pipeline/README.md",
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/01.setup_kafka.md",
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/02.setup_jmxterm.md",
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/03.setup_akhq.md",
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/04.setup_elastic.md",
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/broker01.conf",
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/README.md",
+    "root/dev/data pipe line/kafka/group/04.kafka_connect/README.md",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Consumer_Commit_Async.java",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Consumer_Commit_Auto.java",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Consumer_Commit_Sync.java",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Consumer_Commit_Sync_Offset.java",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Consumer_Simple.java",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Producer_Callback_Async.java",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Producer_Callback_Sync.java",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Producer_Simple.java",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/pom.xml",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/README.md",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/admin.py",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/consumer.py",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/consumer_deatil.py",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/producer.py",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/producer_detail.py",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/producer_key.py",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/README.md",
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/requirements.txt",
+    "root/dev/data pipe line/kafka/group/README.md",
+    "root/dev/data pipe line/kafka/shellscript/kafka 서버 설정 자동화.md",
+    "root/dev/data pipe line/kafka/shellscript/kafka 클러스터 스크립트.md",
+    "root/dev/data pipe line/kafka/shellscript/shellscirpt kafka zookeeper server.md",
+    "root/dev/data pipe line/kafka/shellscript/shellscript kafka server conn check.md",
+    "root/dev/data pipe line/kafka/shellscript/shellscript kafka server start.md",
+    "root/dev/data pipe line/kafka/카프카에 대한 고찰.md",
+    "root/dev/data pipe line/kafka/카프카에 csv 파일 넣어보기.md",
+    "root/dev/data pipe line/kafka/Apache Kafka 실시간 Data Pipeline 구축하기.md",
+    "root/dev/data pipe line/kafka/kafak에 mysql 연결.md",
+    "root/dev/data pipe line/kafka/kafka 설정 및 실행.md",
+    "root/dev/data pipe line/kafka/kafka 설치.md",
+    "root/dev/data pipe line/kafka/kafka 클러스터 서버 시동.md",
+    "root/dev/data pipe line/kafka/Kafka Consumer와 MySQL에 데이터 적재하기.md",
+    "root/dev/data pipe line/kafka/kafka error handling.md",
+    "root/dev/data pipe line/kafka/kafka note.md",
+    "root/dev/data pipe line/kafka/kafka server.properties.md",
+    "root/dev/data pipe line/kafka/kafka에 csv로 데이터 흘리기.md",
+    "root/dev/data pipe line/server/ec2/aws ec2에 docker로 kafka 클러스터 만들 때.md",
+    "root/dev/data pipe line/server/ec2/ec2 docker ssh 터널링.md",
+    "root/dev/data pipe line/server/ec2/ssh 포트 포함 이동.md",
+    "root/dev/data pipe line/server/ec2/ssh server 터널링.md",
+    "root/dev/data pipe line/server/local/우분투 hosts를 설정하여 ssh 편하게 이동하기.md",
+    "root/dev/data pipe line/server/local/우분투 sudo 비번 생략하기.md",
+    "root/dev/data pipe line/server/local/docker container 시작 시 명령어 시작.md",
+    "root/dev/data pipe line/server/local/Kafdrop kafka 클러스터 모니터링.md",
+    "root/dev/data pipe line/server/local/mysql 계정 생성시 %의 의미.md",
+    "root/dev/data pipe line/server/local/ssh 접속시 yes 입력 생략하기.md",
+    "root/dev/data pipe line/server/우분투 root 계정일 때 bash 일반 계정처럼 만들기.md",
+    "root/dev/data pipe line/server/웹 브라우저에서 Kafka 클러스터를 모니터링.md",
+    "root/dev/data pipe line/server/docker 우분투 mysql 설치.md",
+    "root/dev/data pipe line/server/Docker 태그 없는 이미지 삭제하기.md",
+    "root/dev/data pipe line/server/pyenv 설치.md",
+    "root/dev/data pipe line/server/python pip venv 가상환경 사용하지 않기.md",
+    "root/dev/data pipe line/spark/간단 파이프 라인에 스파크 붙이기.md",
+    "root/dev/data pipe line/spark/spark에 대한 고찰.md",
+    "root/dev/data pipe line/docker 파이프라인 aws로 이전.md",
+    "root/dev/data pipe line/docker in docker로 local에서 클러스터 환경 만들기.md",
+    "root/dev/data pipe line/docker pipe line 환경 구축 v0.1.md",
+    "root/dev/data pipe line/docker pipe line 환경 구축 v0.2.md",
+    "root/dev/data pipe line/docker pipe line 환경 구축 v0.3.md",
+    "root/dev/data pipe line/Kafka Consumer와 MySQL에 데이터 적재하기v0.2.md",
     "root/dev/데이터 저장소 비교.md",
     "root/list.md",
     "root/main.md",
-    "index.html",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -79,13 +166,13 @@
   ],
   "fileInfo": {
     "root/dev/데이터 저장소 비교.md": {
-      "modifiedTime": 1725719041971,
-      "sourceSize": 4510,
+      "modifiedTime": 1725773201124,
+      "sourceSize": 4521,
       "exportedPath": "root/dev/데이터-저장소-비교.html",
       "dependencies": []
     },
     "root/list.md": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 3065,
       "exportedPath": "root/list.html",
       "dependencies": []
@@ -96,202 +183,724 @@
       "exportedPath": "root/main.html",
       "dependencies": []
     },
-    "index.html": {
-      "modifiedTime": 1725719041971,
-      "sourceSize": 268,
-      "exportedPath": "index.html",
-      "dependencies": []
-    },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/media/3d6c1bdc4d87cde4de67.svg": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 279,
       "exportedPath": "lib/media/3d6c1bdc4d87cde4de67.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1725719041971,
-      "sourceSize": 3188,
+      "modifiedTime": 1725773201124,
+      "sourceSize": 53628,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1725719041971,
-      "sourceSize": 343,
+      "modifiedTime": 1725773201124,
+      "sourceSize": 7253,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 130471,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 202964,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 236,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 5302,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1725719041971,
+      "modifiedTime": 1725773201124,
       "sourceSize": 1041,
       "exportedPath": "lib/styles/snippets.css",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/데이터 파이프라인 구축/간단 파이프 라인에 카프카 붙이기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 5469,
+      "exportedPath": "root/dev/data-pipe-line/데이터-파이프라인-구축/간단-파이프-라인에-카프카-붙이기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/데이터 파이프라인 구축/flask kafka 연동.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1674,
+      "exportedPath": "root/dev/data-pipe-line/데이터-파이프라인-구축/flask-kafka-연동.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/데이터 파이프라인 구축/python 간단 파이프라인.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 3389,
+      "exportedPath": "root/dev/data-pipe-line/데이터-파이프라인-구축/python-간단-파이프라인.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/데이터 파이프라인 구축/python으로 mysql 파이프 라인 만들기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2518,
+      "exportedPath": "root/dev/data-pipe-line/데이터-파이프라인-구축/python으로-mysql-파이프-라인-만들기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/자동화/shell ssh 여러 개 접속 테스트.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 504,
+      "exportedPath": "root/dev/data-pipe-line/자동화/shell-ssh-여러-개-접속-테스트.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/자동화/shellscript 자기 자신이 실행되는 경로 알아내기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 335,
+      "exportedPath": "root/dev/data-pipe-line/자동화/shellscript-자기-자신이-실행되는-경로-알아내기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/airflow/Airflow note.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 711,
+      "exportedPath": "root/dev/data-pipe-line/airflow/airflow-note.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/Elasticsearch/Elasticsearch Cerebro.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1569,
+      "exportedPath": "root/dev/data-pipe-line/elasticsearch/elasticsearch-cerebro.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/Elasticsearch/Elasticsearch Install.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 4058,
+      "exportedPath": "root/dev/data-pipe-line/elasticsearch/elasticsearch-install.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/hadoop/hadoop 수업/실습/Hadoop HDFS JAVA API.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1079,
+      "exportedPath": "root/dev/data-pipe-line/hadoop/hadoop-수업/실습/hadoop-hdfs-java-api.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/hadoop/hadoop 수업/실습/Hadoop Mapreduce.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 12751,
+      "exportedPath": "root/dev/data-pipe-line/hadoop/hadoop-수업/실습/hadoop-mapreduce.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/hadoop/hadoop 수업/실습/vscode maven 프로젝트 생성.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1977,
+      "exportedPath": "root/dev/data-pipe-line/hadoop/hadoop-수업/실습/vscode-maven-프로젝트-생성.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/hadoop/hadoop 수업/환경 구축/docker hadoop 개발 환경 구축.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 6405,
+      "exportedPath": "root/dev/data-pipe-line/hadoop/hadoop-수업/환경-구축/docker-hadoop-개발-환경-구축.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/hadoop/hadoop 수업/환경 구축/vscode wsl maven 프로젝트 환경 구축.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 615,
+      "exportedPath": "root/dev/data-pipe-line/hadoop/hadoop-수업/환경-구축/vscode-wsl-maven-프로젝트-환경-구축.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/hadoop/hadoop wsl port 정상 작동 로그.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2573,
+      "exportedPath": "root/dev/data-pipe-line/hadoop/hadoop-wsl-port-정상-작동-로그.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/hadoop/hadoop-study docker image.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1281,
+      "exportedPath": "root/dev/data-pipe-line/hadoop/hadoop-study-docker-image.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/hadoop/Hive 트러블 슈팅.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 468,
+      "exportedPath": "root/dev/data-pipe-line/hadoop/hive-트러블-슈팅.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/01.kafka_basic/delete_offset.json": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 101,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/01.kafka_basic/delete_offset.json",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/01.kafka_basic/Log_compaction.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 3630,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/01.kafka_basic/log_compaction.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/01.kafka_basic/README.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 12368,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/01.kafka_basic/readme.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/02.kafka_pipeline/README.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 14300,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/02.kafka_pipeline/readme.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/01.setup_kafka.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2228,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/03.kafka_monitoring/01.setup_kafka.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/02.setup_jmxterm.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 3434,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/03.kafka_monitoring/02.setup_jmxterm.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/03.setup_akhq.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1512,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/03.kafka_monitoring/03.setup_akhq.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/04.setup_elastic.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 8113,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/03.kafka_monitoring/04.setup_elastic.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/broker01.conf": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1102,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/03.kafka_monitoring/broker01.conf",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/03.kafka_monitoring/README.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1260,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/03.kafka_monitoring/readme.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/04.kafka_connect/README.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1300,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/04.kafka_connect/readme.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Consumer_Commit_Async.java": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1835,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/consumer_commit_async.java",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Consumer_Commit_Auto.java": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1463,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/consumer_commit_auto.java",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Consumer_Commit_Sync.java": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1226,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/consumer_commit_sync.java",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Consumer_Commit_Sync_Offset.java": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1593,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/consumer_commit_sync_offset.java",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Consumer_Simple.java": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1250,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/consumer_simple.java",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Producer_Callback_Async.java": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1450,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/producer_callback_async.java",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Producer_Callback_Sync.java": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1364,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/producer_callback_sync.java",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/Producer_Simple.java": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1009,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/java/my-kafka-java/src/main/java/producer_simple.java",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/my-kafka-java/pom.xml": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1340,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/java/my-kafka-java/pom.xml",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/java/README.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 3798,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/java/readme.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/admin.py": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 737,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/python/admin.py",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/consumer.py": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 431,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/python/consumer.py",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/consumer_deatil.py": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2850,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/python/consumer_deatil.py",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/producer.py": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 678,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/python/producer.py",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/producer_detail.py": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1696,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/python/producer_detail.py",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/producer_key.py": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 936,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/python/producer_key.py",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/README.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 5006,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/python/readme.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/05.producer_consumer_code/python/requirements.txt": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 44,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/05.producer_consumer_code/python/requirements.txt",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/group/README.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 14667,
+      "exportedPath": "root/dev/data-pipe-line/kafka/group/readme.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/shellscript/kafka 서버 설정 자동화.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1290,
+      "exportedPath": "root/dev/data-pipe-line/kafka/shellscript/kafka-서버-설정-자동화.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/shellscript/kafka 클러스터 스크립트.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 3876,
+      "exportedPath": "root/dev/data-pipe-line/kafka/shellscript/kafka-클러스터-스크립트.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/shellscript/shellscirpt kafka zookeeper server.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 323,
+      "exportedPath": "root/dev/data-pipe-line/kafka/shellscript/shellscirpt-kafka-zookeeper-server.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/shellscript/shellscript kafka server conn check.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 291,
+      "exportedPath": "root/dev/data-pipe-line/kafka/shellscript/shellscript-kafka-server-conn-check.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/shellscript/shellscript kafka server start.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 312,
+      "exportedPath": "root/dev/data-pipe-line/kafka/shellscript/shellscript-kafka-server-start.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/카프카에 대한 고찰.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 9001,
+      "exportedPath": "root/dev/data-pipe-line/kafka/카프카에-대한-고찰.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/카프카에 csv 파일 넣어보기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 874,
+      "exportedPath": "root/dev/data-pipe-line/kafka/카프카에-csv-파일-넣어보기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/Apache Kafka 실시간 Data Pipeline 구축하기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 370,
+      "exportedPath": "root/dev/data-pipe-line/kafka/apache-kafka-실시간-data-pipeline-구축하기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/kafak에 mysql 연결.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 4695,
+      "exportedPath": "root/dev/data-pipe-line/kafka/kafak에-mysql-연결.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/kafka 설정 및 실행.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 6394,
+      "exportedPath": "root/dev/data-pipe-line/kafka/kafka-설정-및-실행.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/kafka 설치.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 981,
+      "exportedPath": "root/dev/data-pipe-line/kafka/kafka-설치.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/kafka 클러스터 서버 시동.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2513,
+      "exportedPath": "root/dev/data-pipe-line/kafka/kafka-클러스터-서버-시동.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/Kafka Consumer와 MySQL에 데이터 적재하기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 10027,
+      "exportedPath": "root/dev/data-pipe-line/kafka/kafka-consumer와-mysql에-데이터-적재하기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/kafka error handling.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2265,
+      "exportedPath": "root/dev/data-pipe-line/kafka/kafka-error-handling.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/kafka note.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 6644,
+      "exportedPath": "root/dev/data-pipe-line/kafka/kafka-note.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/kafka server.properties.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 7168,
+      "exportedPath": "root/dev/data-pipe-line/kafka/kafka-server.properties.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/kafka/kafka에 csv로 데이터 흘리기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 3167,
+      "exportedPath": "root/dev/data-pipe-line/kafka/kafka에-csv로-데이터-흘리기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/ec2/aws ec2에 docker로 kafka 클러스터 만들 때.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2133,
+      "exportedPath": "root/dev/data-pipe-line/server/ec2/aws-ec2에-docker로-kafka-클러스터-만들-때.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/ec2/ec2 docker ssh 터널링.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 940,
+      "exportedPath": "root/dev/data-pipe-line/server/ec2/ec2-docker-ssh-터널링.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/ec2/ssh 포트 포함 이동.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2493,
+      "exportedPath": "root/dev/data-pipe-line/server/ec2/ssh-포트-포함-이동.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/ec2/ssh server 터널링.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1014,
+      "exportedPath": "root/dev/data-pipe-line/server/ec2/ssh-server-터널링.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/local/우분투 hosts를 설정하여 ssh 편하게 이동하기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 607,
+      "exportedPath": "root/dev/data-pipe-line/server/local/우분투-hosts를-설정하여-ssh-편하게-이동하기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/local/우분투 sudo 비번 생략하기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 267,
+      "exportedPath": "root/dev/data-pipe-line/server/local/우분투-sudo-비번-생략하기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/local/docker container 시작 시 명령어 시작.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1859,
+      "exportedPath": "root/dev/data-pipe-line/server/local/docker-container-시작-시-명령어-시작.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/local/Kafdrop kafka 클러스터 모니터링.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2199,
+      "exportedPath": "root/dev/data-pipe-line/server/local/kafdrop-kafka-클러스터-모니터링.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/local/mysql 계정 생성시 의 의미.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2214,
+      "exportedPath": "root/dev/data-pipe-line/server/local/mysql-계정-생성시-의-의미.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/local/ssh 접속시 yes 입력 생략하기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2322,
+      "exportedPath": "root/dev/data-pipe-line/server/local/ssh-접속시-yes-입력-생략하기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/우분투 root 계정일 때 bash 일반 계정처럼 만들기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 3847,
+      "exportedPath": "root/dev/data-pipe-line/server/우분투-root-계정일-때-bash-일반-계정처럼-만들기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/웹 브라우저에서 Kafka 클러스터를 모니터링.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 7571,
+      "exportedPath": "root/dev/data-pipe-line/server/웹-브라우저에서-kafka-클러스터를-모니터링.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/docker 우분투 mysql 설치.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2708,
+      "exportedPath": "root/dev/data-pipe-line/server/docker-우분투-mysql-설치.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/Docker 태그 없는 이미지 삭제하기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 4503,
+      "exportedPath": "root/dev/data-pipe-line/server/docker-태그-없는-이미지-삭제하기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/pyenv 설치.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 1512,
+      "exportedPath": "root/dev/data-pipe-line/server/pyenv-설치.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/server/python pip venv 가상환경 사용하지 않기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 2146,
+      "exportedPath": "root/dev/data-pipe-line/server/python-pip-venv-가상환경-사용하지-않기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/spark/간단 파이프 라인에 스파크 붙이기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 4304,
+      "exportedPath": "root/dev/data-pipe-line/spark/간단-파이프-라인에-스파크-붙이기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/spark/spark에 대한 고찰.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 4663,
+      "exportedPath": "root/dev/data-pipe-line/spark/spark에-대한-고찰.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/docker 파이프라인 aws로 이전.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 12869,
+      "exportedPath": "root/dev/data-pipe-line/docker-파이프라인-aws로-이전.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/docker in docker로 local에서 클러스터 환경 만들기.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 4784,
+      "exportedPath": "root/dev/data-pipe-line/docker-in-docker로-local에서-클러스터-환경-만들기.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/docker pipe line 환경 구축 v0.1.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 8640,
+      "exportedPath": "root/dev/data-pipe-line/docker-pipe-line-환경-구축-v0.1.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/docker pipe line 환경 구축 v0.2.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 9524,
+      "exportedPath": "root/dev/data-pipe-line/docker-pipe-line-환경-구축-v0.2.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/docker pipe line 환경 구축 v0.3.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 870,
+      "exportedPath": "root/dev/data-pipe-line/docker-pipe-line-환경-구축-v0.3.html",
+      "dependencies": []
+    },
+    "root/dev/data pipe line/Kafka Consumer와 MySQL에 데이터 적재하기v0.2.md": {
+      "modifiedTime": 1725773201124,
+      "sourceSize": 5806,
+      "exportedPath": "root/dev/data-pipe-line/kafka-consumer와-mysql에-데이터-적재하기v0.2.html",
       "dependencies": []
     }
   }

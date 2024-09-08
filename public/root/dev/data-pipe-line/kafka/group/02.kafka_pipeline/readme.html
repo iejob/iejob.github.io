@@ -1,0 +1,356 @@
+<!DOCTYPE html> <html><head>
+		<title>README</title>
+		<base href="..\..\..\..\..\../">
+		<meta id="root-path" root-path="..\..\..\..\..\../">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="note - README">
+		<meta property="og:title" content="README">
+		<meta property="og:description" content="note - README">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="root/dev/data-pipe-line/kafka/group/02.kafka_pipeline/readme.html">
+		<meta property="og:image" content="undefined">
+		<meta property="og:site_name" content="note">
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/other-plugins.css"></noscript><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/supported-plugins.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript><link rel="preload" href="lib/styles/snippets.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/snippets.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title show-ribbon zoom-plugin-bls-zoom horizontal-to-vertical"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="Real-time data pipeline using apache kafka"><p dir="auto">Real-time data pipeline using apache kafka</p></h1><div class="heading-wrapper"><div class="heading-children"><div class="heading-wrapper"><h2 data-heading="[STEP 0] Prerequisite" dir="auto" class="heading" id="[STEP_0]_Prerequisite"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[STEP 0] Prerequisite</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="Java 설치 및 JAVA_HOME 설정" dir="auto" class="heading" id="Java_설치_및_JAVA_HOME_설정"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Java 설치 및 JAVA_HOME 설정</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">kafka_basic/README.md에 명시된 가이드에 따라서</li>
+<li data-line="1" dir="auto">java 설치 및 JAVA_HOME 설정</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="[STEP 1] Install ELK Stack (Elasticsearch + Logstash + Kibana)" dir="auto" class="heading" id="[STEP_1]_Install_ELK_Stack_(Elasticsearch_+_Logstash_+_Kibana)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[STEP 1] Install ELK Stack (Elasticsearch + Logstash + Kibana)</h2><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Elasticsearch를 비즈니에서 활용시 주의사항 (OSS버전 vs Default)
+<ul>
+<li data-line="1" dir="auto">OSS는 elasticsearch를 이용하여 별도의 제품/솔루션으로 판매할 목적인 경우에 활용</li>
+<li data-line="2" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Basic은 기업 내부에서는 무료로 사용가능 
+<ul>
+<li data-line="3" dir="auto">즉 OSS 버전을 기반으로 elastic사에서 추가기능(ML, SIEM등)을 무료로 제공하는 것</li>
+</ul>
+</li>
+<li data-line="4" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>정리하면, OSS는 누구나 활용 가능한 오픈소스
+<ul>
+<li data-line="5" dir="auto">이를 이용해 별도의 제품을 만들어도 가능함.</li>
+<li data-line="6" dir="auto">elastic사도 OSS를 이용해서 basic 제품을 개발하고, 이를 무료로 제공함. </li>
+<li data-line="7" dir="auto">하지만, basic 버전의 소유권은 elastic사에 귀속됨(무로지만, 이를 이용해 비즈니스/사업을 하면 안됨)</li>
+</ul>
+</li>
+<li data-line="8" dir="auto"><a rel="noopener" class="external-link" href="http://kimjmin.net/2020/06/2020-06-elastic-devrel/" target="_blank">http://kimjmin.net/2020/06/2020-06-elastic-devrel/</a></li>
+</ul>
+</li>
+<li data-line="9" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Elastic stack 설치
+<ul>
+<li data-line="10" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<ul>
+<li data-line="10" dir="auto"><a rel="noopener" class="external-link" href="https://www.elastic.co/guide/en/elastic-stack/current/installing-elastic-stack.html" target="_blank">https://www.elastic.co/guide/en/elastic-stack/current/installing-elastic-stack.html</a> 참고</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div><div class="heading-wrapper"><h3 data-heading="1) Install an Elasticsearch" dir="auto" class="heading" id="1)_Install_an_Elasticsearch"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>1) Install an Elasticsearch</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>config 설정 
+<ul>
+<li data-line="1" dir="auto">외부 접속 허용(network.host) : server와 client가 다른 ip가 있을 경우, 외부에서 접속할 수 있도록 설정을 추가해야함.</li>
+</ul>
+</li>
+</ul></div><div><pre><code>&gt; cd ~/apps
+&gt; wget wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.14.1-linux-x86_64.tar.gz
+&gt; tar -xzf elasticsearch-8.14.1-linux-x86_64.tar.gz
+&gt; cd ~/apps/elasticsearch-8.14.1
+&gt; vi config/elasticsearch.yml
+# bind ip to connect from client  (lan이 여러개 있을 경우 외부에서 접속할 ip를 지정할 수 있음.)
+# bind all ip server have "0.0.0.0"
+network.host: 0.0.0.0   #(":" 다음에 스페이스를 추가해야 함.)
+
+# kibana에서 보안정책 없이 접근 가능하도록 "false"로 변경
+xpack.security.enabled: false
+
+</code><button class="copy-code-button">복사</button></pre></div><div class="heading-wrapper"><h4 data-heading="오류 해결 : virtual memory error" dir="auto" class="heading" id="오류_해결_:_virtual_memory_error"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>오류 해결 : virtual memory error</h4><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">시스템의 nmap count를 증가기켜야 한다.</li>
+<li data-line="1" dir="auto">에러 : [2]: max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]</li>
+<li data-line="2" dir="auto"><a rel="noopener" class="external-link" href="https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html" target="_blank">https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html</a></li>
+</ul></div><div><pre><code># 0) 현재 설정 값 확인
+&gt; cat /proc/sys/vm/max_map_count
+65530
+
+# 아래 3가지 방법 중 1가지를 선택하여 적용 가능
+# 1-1) 현재 서버상태에서만 적용하는 방식
+&gt; sudo sysctl -w vm.max_map_count=262144
+
+# 1-2) 영구적으로 적용 (서버 재부팅시 자동 적용)
+&gt; sudo vi /etc/sysctl.conf
+
+# 아래 내용 추가
+vm.max_map_count = 262144
+
+# 1-3) 또는 아래 명령어 실행 
+&gt; echo vm.max_map_count=262144 | sudo tee -a /etc/sysctl.conf
+
+
+# 3) 시스템에 적용하여 변경된 값을 확인
+&gt; sudo sysctl -p
+vm.max_map_count = 262144
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="Run elasticsearch" dir="auto" class="heading" id="Run_elasticsearch"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Run elasticsearch</h4><div class="heading-children"><div><pre><code>&gt; ./bin/elasticsearch
+....................
+[2024-07-02T12:41:39,687][INFO ][o.e.l.ClusterStateLicenseService] [instance-20240701-162846] license [2ce86f9d-ae5b-47c0-815a-35e4ad0d9ae2] mode [basic] - valid
+[2024-07-02T12:41:46,485][INFO ][o.e.x.s.InitialNodeSecurityAutoConfiguration] [instance-20240701-162846] HTTPS has been configured with automatically generated certificates, and the CA's hex-encoded SHA-256 fingerprint is [6500b8c8df356e4965da2f1692d8569a4e3058f04522f945fd699b76d5c81c64]
+[2024-07-02T12:41:46,489][INFO ][o.e.x.s.s.SecurityIndexManager] [instance-20240701-162846] security index does not exist, creating [.security-7] with alias [.security]
+[2024-07-02T12:41:46,506][INFO ][o.e.x.s.e.InternalEnrollmentTokenGenerator] [instance-20240701-162846] Will not generate node enrollment token because node is only bound on localhost for transport and cannot connect to nodes from other hosts
+[2024-07-02T12:41:46,559][INFO ][o.e.c.m.MetadataCreateIndexService] [instance-20240701-162846] [.security-7] creating index, cause [api], templates [], shards [1]/[0]
+[2024-07-02T12:41:46,617][INFO ][o.e.x.s.s.SecurityIndexManager] [instance-20240701-162846] security index does not exist, creating [.security-7] with alias [.security]
+[2024-07-02T12:41:46,839][INFO ][o.e.c.r.a.AllocationService] [instance-20240701-162846] current.health="GREEN" message="Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[.security-7][0]]])." previous.health="YELLOW" reason="shards started [[.security-7][0]]"
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Elasticsearch security features have been automatically configured!
+✅ Authentication is enabled and cluster connections are encrypted.
+
+ℹ️  Password for the elastic user (reset with `bin/elasticsearch-reset-password -u elastic`):
+  ZG73I6D*OjUTT06oqZ4h
+
+ℹ️  HTTP CA certificate SHA-256 fingerprint:
+  6500b8c8df356e4965da2f1692d8569a4e3058f04522f945fd699b76d5c81c64
+
+ℹ️  Configure Kibana to use this cluster:
+• Run Kibana and click the configuration link in the terminal when Kibana starts.
+• Copy the following enrollment token and paste it into Kibana in your browser (valid for the next 30 minutes):
+  eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTAuMTc4LjAuNDo5MjAwIl0sImZnciI6IjY1MDBiOGM4ZGYzNTZlNDk2NWRhMmYxNjkyZDg1NjlhNGUzMDU4ZjA0NTIyZjk0NWZkNjk5Yjc2ZDVjODFjNjQiLCJrZXkiOiJSc1YzYzVBQk5JX1ppY3hPSlk5RjpjdGtUUWcwc1NidWpxX2wxTU5uVlBBIn0=
+
+ℹ️  Configure other nodes to join this cluster:
+• On this node:
+  ⁃ Create an enrollment token with `bin/elasticsearch-create-enrollment-token -s node`.
+  ⁃ Uncomment the transport.host setting at the end of config/elasticsearch.yml.
+  ⁃ Restart Elasticsearch.
+• On other nodes:
+  ⁃ Start Elasticsearch with `bin/elasticsearch --enrollment-token &lt;token&gt;`, using the enrollment token that you generated.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="Check elasticsearch is running" dir="auto" class="heading" id="Check_elasticsearch_is_running"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Check elasticsearch is running</h4><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">Console을 이용한 접근</li>
+</ul></div><div><pre><code>&gt; export ELASTIC_PASSWORD="ZG73I6D*OjUTT06oqZ4h"
+
+&gt; curl --cacert ~/apps/elasticsearch-8.14.1/config/certs/http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200 
+{
+  "name" : "instance-20240701-162846",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "BjsJfIIxSQySPV90paP3TQ",
+  "version" : {
+    "number" : "8.14.1",
+    "build_flavor" : "default",
+    "build_type" : "tar",
+    "build_hash" : "93a57a1a76f556d8aee6a90d1a95b06187501310",
+    "build_date" : "2024-06-10T23:35:17.114581191Z",
+    "build_snapshot" : false,
+    "lucene_version" : "9.10.0",
+    "minimum_wire_compatibility_version" : "7.17.0",
+    "minimum_index_compatibility_version" : "7.0.0"
+  },
+  "tagline" : "You Know, for Search"
+}
+
+## 아래와 같은 방법으로 접근도 가능함
+&gt; curl -k -v -u elastic https://34.64.166.195:9200
+Enter host password for user 'elastic': ZG73I6D*OjUTT06oqZ4h
+</code><button class="copy-code-button">복사</button></pre></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Web Browser를 이용한 접근
+<ul>
+<li data-line="1" dir="auto">Web brower 주소 창에서 "https://Elastic-server-ip:9200/" 입력</li>
+<li data-line="2" dir="auto">팝업 창에서 user/password를 elastid/위에서 저장한 password 로 입력</li>
+<li data-line="3" dir="auto">web에서 elasticsearch 정보 확인</li>
+</ul>
+</li>
+</ul></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="2) Install and run a kibana" dir="auto" class="heading" id="2)_Install_and_run_a_kibana"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>2) Install and run a kibana</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps
+&gt; curl -O https://artifacts.elastic.co/downloads/kibana/kibana-8.14.1-linux-x86_64.tar.gz
+&gt; tar -xzf kibana-8.14.1-linux-x86_64.tar.gz
+&gt; cd ~/apps/kibana-8.14.1/
+</code><button class="copy-code-button">복사</button></pre></div><div class="heading-wrapper"><h4 data-heading="Kibana 설정 변경" dir="auto" class="heading" id="Kibana_설정_변경"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Kibana 설정 변경</h4><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>외부 접속 가능하도록 설정 값 변경 
+<ul>
+<li data-line="1" dir="auto">외부의 어떤 IP에서도 접속 가능하도록 0.0.0.0으로 변경 (운영환경에서는 특정 ip대역만 지정하여 보안강화)</li>
+</ul>
+</li>
+<li data-line="2" dir="auto">elasticsearch 접속을 위한 user/password 설정</li>
+</ul></div><div><pre><code>&gt;  
+# 외부에서 접근 가능하도록 설정 
+server.host: "0.0.0.0"
+
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="Run kibana" dir="auto" class="heading" id="Run_kibana"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Run kibana</h4><div class="heading-children"><div><pre><code>&gt; cd ~/apps/kibana-8.14.1/ 
+&gt; bin/kibana
+.....
+  log   [10:40:10.296] [info][server][Kibana][http] http server running at http://localhost:5601
+  log   [10:40:12.690] [warning][plugins][reporting] Enabling the Chromium sandbox provides an additional layer of protection
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h4 data-heading="Kibana 에러 시 기존 index 삭제 후 재시작" dir="auto" class="heading" id="Kibana_에러_시_기존_index_삭제_후_재시작"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Kibana 에러 시 기존 index 삭제 후 재시작</h4><div class="heading-children"><div><pre><code>curl -XDELETE http://localhost:9200/.kibana
+curl -XDELETE 'http://localhost:9200/.kibana*'
+curl -XDELETE http://localhost:9200/.kibana_2
+curl -XDELETE http://localhost:9200/.kibana_1
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h3 data-heading="3) Install a logstash" dir="auto" class="heading" id="3)_Install_a_logstash"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>3) Install a logstash</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps
+&gt; wget https://artifacts.elastic.co/downloads/logstash/logstash-8.14.1-linux-x86_64.tar.gz
+&gt; tar xvf logstash-8.14.1-linux-x86_64.tar.gz
+&gt; cd ~/apps/logstash-8.14.1
+</code><button class="copy-code-button">복사</button></pre></div><div class="heading-wrapper"><h4 data-heading="Test a logstash" dir="auto" class="heading" id="Test_a_logstash"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Test a logstash</h4><div class="heading-children"><div><pre><code>&gt; bin/logstash -e 'input { stdin { } } output { stdout {} }'
+# 실행까지 시간이 소요된다. (아래 메세지가 출력되면 정상 실행된 것으로 확인)
+.........
+[2024-07-02T15:42:37,938][INFO ][logstash.javapipeline    ][main] Pipeline started {"pipeline.id"=&gt;"main"}
+The stdin plugin is now waiting for input:
+[2024-07-02T15:42:37,953][INFO ][logstash.agent           ] Pipelines running {:count=&gt;1, :running_pipelines=&gt;[:main], :non_running_pipelines=&gt;[]}
+
+mytest  &lt;-- 메세지 입력 후 아래와 같이 출력되면 정상적으로 설치된 것
+{
+    "host" =&gt; {
+        "hostname" =&gt; "instance-20240701-162846"
+    },
+    "event" =&gt; {
+        "original" =&gt; "mytest"
+    },
+    "@version" =&gt; "1",
+    "message" =&gt; "mytest",
+    "@timestamp" =&gt; 2024-07-02T15:44:03.085998069Z
+}
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="[STEP 2] Configure kafka topic" dir="auto" class="heading" id="[STEP_2]_Configure_kafka_topic"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[STEP 2] Configure kafka topic</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="Step 1: Create a topic (realtime)" dir="auto" class="heading" id="Step_1:_Create_a_topic_(realtime)"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Step 1: Create a topic (realtime)</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">실습에 사용할 topic을 생성한다. </li>
+</ul></div><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+
+&gt; bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic realtime
+
+# check created topic "realtime"
+&gt; bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+__consumer_offsets
+kv_topic
+mytopic
+realtime
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Step 2: Send some messages" dir="auto" class="heading" id="Step_2:_Send_some_messages"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Step 2: Send some messages</h3><div class="heading-children"><div><pre><code>&gt; bin/kafka-console-producer.sh --broker-list localhost:9092 --topic realtime
+This is a message
+This is another message
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Step 3: Start a consumer" dir="auto" class="heading" id="Step_3:_Start_a_consumer"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Step 3: Start a consumer</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+&gt; bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic realtime --from-beginning
+
+This is a message
+This is another message
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="[STEP 3] Run the Kakfka Producer using logstash" dir="auto" class="heading" id="[STEP_3]_Run_the_Kakfka_Producer_using_logstash"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[STEP 3] Run the Kakfka Producer using logstash</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="download the sample file" dir="auto" class="heading" id="download_the_sample_file"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>download the sample file</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps
+&gt; wget https://github.com/freepsw/demo-spark-analytics/raw/master/00.stage1/tracks.csv
+&gt; touch tracks_live.csv
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Run logstash" dir="auto" class="heading" id="Run_logstash"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Run logstash</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">kafka topic을 realtime로 변경</li>
+</ul></div><div><pre><code>&gt; vi ~/apps/producer.conf
+</code><button class="copy-code-button">복사</button></pre></div><div><ul>
+<li data-line="0" dir="auto">아래 path의 경로를 다운로드 받은 파일의 경로로 변경</li>
+</ul></div><div><pre class="language-yaml" tabindex="0"><code class="language-yaml is-loaded">input <span class="token punctuation">{</span>
+  file <span class="token punctuation">{</span>
+    path =<span class="token punctuation">&gt;</span> "/home/freepsw/apps/tracks_live.csv"
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+output <span class="token punctuation">{</span>
+  stdout <span class="token punctuation">{</span>
+    codec =<span class="token punctuation">&gt;</span> rubydebug<span class="token punctuation">{</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  kafka <span class="token punctuation">{</span>
+    codec =<span class="token punctuation">&gt;</span> plain <span class="token punctuation">{</span>
+      format =<span class="token punctuation">&gt;</span> "%<span class="token punctuation">{</span>message<span class="token punctuation">}</span>"
+    <span class="token punctuation">}</span>
+    bootstrap_servers =<span class="token punctuation">&gt;</span> "localhost<span class="token punctuation">:</span>9092"
+    topic_id =<span class="token punctuation">&gt;</span> "realtime"
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code><button class="copy-code-button">복사</button></pre></div><div><ul>
+<li data-line="0" dir="auto">run logstash </li>
+</ul></div><div><pre><code>&gt; cd ~/apps/
+&gt; ~/apps/logstash-8.14.1/bin/logstash -f ~/apps/producer.conf
+.....
+[2024-07-02T16:06:52,012][INFO ][logstash.agent           ] Pipelines running {:count=&gt;1, :running_pipelines=&gt;[:main], :non_running_pipelines=&gt;[]}
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="[STEP 4] Generate steaming data using data-generator.py" dir="auto" class="heading" id="[STEP_4]_Generate_steaming_data_using_data-generator.py"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[STEP 4] Generate steaming data using data-generator.py</h2><div class="heading-children"><div><pre><code>&gt; cd ~/apps
+&gt; vi data_generator.py
+</code><button class="copy-code-button">복사</button></pre></div><div class="heading-wrapper"><h3 data-heading="data_generator.py" dir="auto" class="heading" id="data_generator.py"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>data_generator.py</h3><div class="heading-children"><div class="has-run-code-button"><pre class="language-python" tabindex="0"><code class="language-python is-loaded"><span class="token comment">#-*- coding: utf-8 -*-</span>
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> random
+
+r_fname <span class="token operator">=</span> <span class="token string">"tracks.csv"</span>
+w_fname <span class="token operator">=</span> <span class="token string">"tracks_live.csv"</span>
+
+rf <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span>r_fname<span class="token punctuation">)</span>
+wf <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span>w_fname<span class="token punctuation">,</span> <span class="token string">"a+"</span><span class="token punctuation">)</span>
+
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+	num_lines <span class="token operator">=</span> <span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token keyword">for</span> line <span class="token keyword">in</span> rf<span class="token punctuation">)</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span>num_lines<span class="token punctuation">)</span>
+	<span class="token comment">#num_lines = 10</span>
+
+	rf<span class="token punctuation">.</span>seek<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	lines <span class="token operator">=</span> <span class="token number">0</span>
+	<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+		line <span class="token operator">=</span> rf<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span>
+		wf<span class="token punctuation">.</span>write<span class="token punctuation">(</span>line<span class="token punctuation">)</span>
+		wf<span class="token punctuation">.</span>flush<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+		<span class="token comment"># sleep for weighted time period</span>
+		stime <span class="token operator">=</span> random<span class="token punctuation">.</span>choice<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token number">0.8</span><span class="token punctuation">,</span> <span class="token number">0.3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+		<span class="token keyword">print</span><span class="token punctuation">(</span>stime<span class="token punctuation">)</span>
+		time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span>stime<span class="token punctuation">)</span>
+		lines <span class="token operator">+=</span> <span class="token number">1</span>
+
+		<span class="token comment"># exit if read all lines</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>lines <span class="token operator">==</span> num_lines<span class="token punctuation">)</span><span class="token punctuation">:</span>
+			<span class="token keyword">break</span>
+		<span class="token comment"># if(lines == num_lines):</span>
+		<span class="token comment"># 	rf.seek(0)</span>
+<span class="token keyword">finally</span><span class="token punctuation">:</span>
+	rf<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+	wf<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"close file"</span><span class="token punctuation">)</span>
+</code><button class="run-code-button">Run</button><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="run generator" dir="auto" class="heading" id="run_generator"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>run generator</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps
+&gt; python data_generator.py
+</code><button class="copy-code-button">복사</button></pre></div></div></div><div class="heading-wrapper"><h3 data-heading="Check kafka message" dir="auto" class="heading" id="Check_kafka_message"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Check kafka message</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">logstash에서 kafka로 정상적으로 메세지가 전송되고 있는지 모니터링</li>
+<li data-line="1" dir="auto">아래의 kafka-console-consumer 명령어를 통해 전송되는 메세지를 확인</li>
+</ul></div><div><pre><code>&gt; cd ~/apps/kafka_2.12-3.6.2
+&gt; bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic realtime
+# logstash에서 정상적으로 메세지를 보내면, 아래와 같은 메세지가 출력될 것임.
+0,48,453,"2014-10-23 03:26:20",0,"72132"
+1,1081,19,"2014-10-15 18:32:14",1,"17307"
+2,532,36,"2014-12-10 15:33:16",1,"66216
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="[STEP 5] Run the Kakfka Consumer using logstash" dir="auto" class="heading" id="[STEP_5]_Run_the_Kakfka_Consumer_using_logstash"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[STEP 5] Run the Kakfka Consumer using logstash</h2><div class="heading-children"><div><pre><code>&gt; cd ~/apps
+&gt; vi ~/apps/consumer.conf
+</code><button class="copy-code-button">복사</button></pre></div><div><pre class="language-yaml" tabindex="0"><code class="language-yaml is-loaded">input <span class="token punctuation">{</span>
+  kafka<span class="token punctuation">{</span>
+    topics =<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span><span class="token string">"realtime"</span><span class="token punctuation">]</span>
+    bootstrap_servers =<span class="token punctuation">&gt;</span> "localhost<span class="token punctuation">:</span>9092"
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+filter <span class="token punctuation">{</span>
+  csv <span class="token punctuation">{</span>
+    columns =<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span><span class="token string">"event_id"</span><span class="token punctuation">,</span><span class="token string">"customer_id"</span><span class="token punctuation">,</span><span class="token string">"track_id"</span><span class="token punctuation">,</span><span class="token string">"datetime"</span><span class="token punctuation">,</span><span class="token string">"ismobile"</span><span class="token punctuation">,</span><span class="token string">"listening_zip_code"</span><span class="token punctuation">]</span>
+    separator =<span class="token punctuation">&gt;</span> "<span class="token punctuation">,</span>"
+  <span class="token punctuation">}</span>
+
+  date <span class="token punctuation">{</span>
+    match =<span class="token punctuation">&gt;</span> <span class="token punctuation">[</span> <span class="token string">"datetime"</span><span class="token punctuation">,</span> <span class="token string">"YYYY-MM-dd HH:mm:ss"</span><span class="token punctuation">]</span>
+    target =<span class="token punctuation">&gt;</span> "datetime"
+  <span class="token punctuation">}</span>
+
+  mutate <span class="token punctuation">{</span>
+    convert =<span class="token punctuation">&gt;</span> <span class="token punctuation">{</span> "ismobile" =<span class="token punctuation">&gt;</span> "integer" <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+output <span class="token punctuation">{</span>
+  stdout <span class="token punctuation">{</span> codec =<span class="token punctuation">&gt;</span> rubydebug <span class="token punctuation">}</span>
+
+  elasticsearch <span class="token punctuation">{</span>
+    hosts =<span class="token punctuation">&gt;</span> "http<span class="token punctuation">:</span>//localhost<span class="token punctuation">:</span>9200"
+    index =<span class="token punctuation">&gt;</span> "ba_realtime"
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> 
+</code><button class="copy-code-button">복사</button></pre></div><div class="heading-wrapper"><h3 data-heading="run logstash consumer" dir="auto" class="heading" id="run_logstash_consumer"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>run logstash consumer</h3><div class="heading-children"><div><pre><code>&gt; cd ~/apps
+&gt; ~/apps/logstash-8.14.1/bin/logstash --path.data ~/apps/consumer-data -f ~/apps/consumer.conf
+</code><button class="copy-code-button">복사</button></pre></div></div></div></div></div><div class="heading-wrapper"><h2 data-heading="[STEP 6] Kibana로 실시간 유입 데이터 확인" dir="auto" class="heading" id="[STEP_6]_Kibana로_실시간_유입_데이터_확인"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>[STEP 6] Kibana로 실시간 유입 데이터 확인</h2><div class="heading-children"><div class="heading-wrapper"><h3 data-heading="Kibana Web Browser에서 접속하여 데이터 확인" dir="auto" class="heading" id="Kibana_Web_Browser에서_접속하여_데이터_확인"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Kibana Web Browser에서 접속하여 데이터 확인</h3><div class="heading-children"><div><ul>
+<li data-line="0" dir="auto">http://vm-instance-ip:5601 </li>
+</ul></div><div class="mod-footer"></div></div></div></div></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Real-time data pipeline using apache kafka"><div class="tree-item-contents heading-link" heading-name="Real-time data pipeline using apache kafka"><span class="tree-item-title">Real-time data pipeline using apache kafka</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#[STEP_0]_Prerequisite"><div class="tree-item-contents heading-link" heading-name="[STEP 0] Prerequisite"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">[STEP 0] Prerequisite</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Java_설치_및_JAVA_HOME_설정"><div class="tree-item-contents heading-link" heading-name="Java 설치 및 JAVA_HOME 설정"><span class="tree-item-title">Java 설치 및 JAVA_HOME 설정</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#[STEP_1]_Install_ELK_Stack_(Elasticsearch_+_Logstash_+_Kibana)"><div class="tree-item-contents heading-link" heading-name="[STEP 1] Install ELK Stack (Elasticsearch + Logstash + Kibana)"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">[STEP 1] Install ELK Stack (Elasticsearch + Logstash + Kibana)</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#1)_Install_an_Elasticsearch"><div class="tree-item-contents heading-link" heading-name="1) Install an Elasticsearch"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">1. 
+Install an Elasticsearch
+</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#오류_해결_:_virtual_memory_error"><div class="tree-item-contents heading-link" heading-name="오류 해결 : virtual memory error"><span class="tree-item-title">오류 해결 : virtual memory error</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Run_elasticsearch"><div class="tree-item-contents heading-link" heading-name="Run elasticsearch"><span class="tree-item-title">Run elasticsearch</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Check_elasticsearch_is_running"><div class="tree-item-contents heading-link" heading-name="Check elasticsearch is running"><span class="tree-item-title">Check elasticsearch is running</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#2)_Install_and_run_a_kibana"><div class="tree-item-contents heading-link" heading-name="2) Install and run a kibana"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">2. 
+Install and run a kibana
+</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Kibana_설정_변경"><div class="tree-item-contents heading-link" heading-name="Kibana 설정 변경"><span class="tree-item-title">Kibana 설정 변경</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Run_kibana"><div class="tree-item-contents heading-link" heading-name="Run kibana"><span class="tree-item-title">Run kibana</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Kibana_에러_시_기존_index_삭제_후_재시작"><div class="tree-item-contents heading-link" heading-name="Kibana 에러 시 기존 index 삭제 후 재시작"><span class="tree-item-title">Kibana 에러 시 기존 index 삭제 후 재시작</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#3)_Install_a_logstash"><div class="tree-item-contents heading-link" heading-name="3) Install a logstash"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">3. 
+Install a logstash
+</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Test_a_logstash"><div class="tree-item-contents heading-link" heading-name="Test a logstash"><span class="tree-item-title">Test a logstash</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#[STEP_2]_Configure_kafka_topic"><div class="tree-item-contents heading-link" heading-name="[STEP 2] Configure kafka topic"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">[STEP 2] Configure kafka topic</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Step_1:_Create_a_topic_(realtime)"><div class="tree-item-contents heading-link" heading-name="Step 1: Create a topic (realtime)"><span class="tree-item-title">Step 1: Create a topic (realtime)</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Step_2:_Send_some_messages"><div class="tree-item-contents heading-link" heading-name="Step 2: Send some messages"><span class="tree-item-title">Step 2: Send some messages</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Step_3:_Start_a_consumer"><div class="tree-item-contents heading-link" heading-name="Step 3: Start a consumer"><span class="tree-item-title">Step 3: Start a consumer</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#[STEP_3]_Run_the_Kakfka_Producer_using_logstash"><div class="tree-item-contents heading-link" heading-name="[STEP 3] Run the Kakfka Producer using logstash"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">[STEP 3] Run the Kakfka Producer using logstash</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#download_the_sample_file"><div class="tree-item-contents heading-link" heading-name="download the sample file"><span class="tree-item-title">download the sample file</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Run_logstash"><div class="tree-item-contents heading-link" heading-name="Run logstash"><span class="tree-item-title">Run logstash</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#[STEP_4]_Generate_steaming_data_using_data-generator.py"><div class="tree-item-contents heading-link" heading-name="[STEP 4] Generate steaming data using data-generator.py"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">[STEP 4] Generate steaming data using data-generator.py</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#data_generator.py"><div class="tree-item-contents heading-link" heading-name="data_generator.py"><span class="tree-item-title">data_generator.py</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#run_generator"><div class="tree-item-contents heading-link" heading-name="run generator"><span class="tree-item-title">run generator</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Check_kafka_message"><div class="tree-item-contents heading-link" heading-name="Check kafka message"><span class="tree-item-title">Check kafka message</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#[STEP_5]_Run_the_Kakfka_Consumer_using_logstash"><div class="tree-item-contents heading-link" heading-name="[STEP 5] Run the Kakfka Consumer using logstash"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">[STEP 5] Run the Kakfka Consumer using logstash</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#run_logstash_consumer"><div class="tree-item-contents heading-link" heading-name="run logstash consumer"><span class="tree-item-title">run logstash consumer</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#[STEP_6]_Kibana로_실시간_유입_데이터_확인"><div class="tree-item-contents heading-link" heading-name="[STEP 6] Kibana로 실시간 유입 데이터 확인"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">[STEP 6] Kibana로 실시간 유입 데이터 확인</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="root\dev\data-pipe-line\kafka\group\02.kafka_pipeline\readme.html#Kibana_Web_Browser에서_접속하여_데이터_확인"><div class="tree-item-contents heading-link" heading-name="Kibana Web Browser에서 접속하여 데이터 확인"><span class="tree-item-title">Kibana Web Browser에서 접속하여 데이터 확인</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>
