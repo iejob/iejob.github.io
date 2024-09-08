@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[note]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>note</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 07 Sep 2024 14:24:04 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 07 Sep 2024 14:24:01 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[데이터 저장소 비교]]></title><description><![CDATA[ 
+ <br>데이터 저장소 비교하기<br><br>한국 회사에서 많이 사용하는 데이터 저장소 툴을 취업에 중요한 요소로 고려해 순서대로 정리해 드릴게요. 다만, 특정 도구의 사용 여부는 회사의 규모나 분야에 따라 달라질 수 있으므로, 아래는 전반적인 경향을 바탕으로 한 순위입니다.<br><br>
+<br>사용 빈도: 국내 중소, 대기업을 막론하고 SQL 기반의 RDBMS는 여전히 많이 사용됩니다. 특히 금융, 제조, 서비스 업계 등에서 데이터 무결성과 트랜잭션 처리가 중요한 곳에서 PostgreSQL을 포함한 관계형 데이터베이스가 널리 사용됩니다.
+<br>취업 시 중요성: 데이터 엔지니어로서 SQL에 대한 이해와 능숙한 사용은 필수적입니다. 관계형 데이터베이스는 여전히 기본 기술로 여겨집니다.
+<br><br>
+<br>사용 빈도: 클라우드 기술이 빠르게 확산되면서 S3와 같은 클라우드 스토리지를 도입하는 회사가 많아졌습니다. 특히 스타트업과 IT 서비스, 대기업 클라우드 전환 프로젝트에서 많이 사용됩니다.
+<br>취업 시 중요성: 클라우드 기술, 특히 AWS에 대한 이해는 매우 중요합니다. 많은 기업이 클라우드 서비스를 적극적으로 사용하고 있기 때문에 클라우드와 관련된 경험이 큰 도움이 됩니다.
+<br><br>
+<br>사용 빈도: 빅데이터 분석 및 처리 기술을 활용하는 대기업(네이버, 카카오, 삼성 등)에서 많이 사용됩니다. 특히 금융, 통신, 대규모 IT 서비스 회사에서 대량 데이터를 분석하는 데 사용합니다.
+<br>취업 시 중요성: 빅데이터 처리는 데이터 엔지니어링의 중요한 부분으로, 특히 대규모 데이터를 다루는 기업에서 Hive와 같은 하둡 생태계를 활용한 기술이 매우 중요합니다.
+<br><br>
+<br>사용 빈도: 대용량 데이터를 처리하는 회사에서 주로 사용되며, Hive와 함께 사용하는 경우가 많습니다. 하지만 국내에서는 AWS와 같은 클라우드 기반 데이터 저장소로의 전환이 점차 증가하면서 HDFS의 사용은 상대적으로 감소하고 있습니다.
+<br>취업 시 중요성: 빅데이터 관련 직무에서 여전히 중요한 기술이지만, 클라우드 기반 스토리지로 전환하는 추세를 감안할 때 S3와 같은 클라우드 기술의 중요성이 더 커지고 있습니다.
+]]></description><link>root\dev\데이터-저장소-비교.html</link><guid isPermaLink="false">root/dev/데이터 저장소 비교.md</guid><pubDate>Sat, 07 Sep 2024 14:21:28 GMT</pubDate></item><item><title><![CDATA[main]]></title><description><![CDATA[ 
+ <br>Note저장 공유용]]></description><link>root\main.html</link><guid isPermaLink="false">root/main.md</guid><pubDate>Thu, 18 Apr 2024 16:46:09 GMT</pubDate></item></channel></rss>
